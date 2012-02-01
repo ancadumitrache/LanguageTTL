@@ -1,0 +1,15 @@
+content(type(save_lt_editor('c:/Users/Anca/Dropbox/BehDyn/simulations/convergence.lt'))).
+content(generator(app(leadsto_software, 127, [lteditor:1, psprinting:1]))).
+content(run([date('Wed Dec 14 22:47:42 2011')])).
+end_time(9).
+sortdef('WORDS', ['What', light, through, yonder, window, breaks]).
+sortdef('MEMORY', ['Juliet']).
+interval([], range(0, 2), forall(['W':'WORDS'], lexical_input('W'))).
+interval([], range(0, 9), forall(['M':'MEMORY'], in_memory('M'))).
+leadsto(['W':'WORDS'], lexical_input('W'), concept_action_component('W'), efgh(0, 0, 1, 1)).
+leadsto(['W':'WORDS'], and(lexical_input('W'), concept_action_component('W')), semantic_category_rep('W'), efgh(0, 0, 1, 1)).
+leadsto(['W':'WORDS'], semantic_category_rep('W'), a_concept_rep('W'), efgh(0, 0, 1, 1)).
+leadsto(['W':'WORDS'], semantic_category_rep('W'), msc_concept_rep('W'), efgh(0, 0, 1, 1)).
+leadsto(['W':'WORDS'], and(and(a_concept_rep('W'), msc_concept_rep('W')), forall(['M':'MEMORY'], in_memory('M'))), simple_sentence_struct('W'), efgh(0, 0, 1, 1)).
+leadsto(['W':'WORDS'], simple_sentence_struct('W'), syntactic_rep('W'), efgh(0, 0, 1, 1)).
+leadsto(['W':'WORDS'], syntactic_rep('W'), semantic_rep('W'), efgh(0, 0, 1, 1)).
